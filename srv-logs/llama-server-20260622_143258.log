@@ -155,3 +155,23 @@ How are you?<|im_end|>
 289.14.726.073 I slot print_timing: id  1 | task 1239 |    graphs reused =       1517
 289.14.726.096 I slot      release: id  1 | task 1239 | stop processing: n_tokens = 395, truncated = 0
 289.14.726.118 I srv  update_slots: all slots are idle
+450.57.759.826 I srv  params_from_: Chat format: peg-native
+450.57.760.021 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.844 (> 0.100 thold), f_keep = 0.250
+450.57.760.027 I srv  get_availabl: updating prompt cache
+450.57.760.079 W srv   prompt_save:  - saving prompt with length 108, total state size = 2.955 MiB (draft: 0.000 MiB)
+450.57.761.502 I srv          load:  - looking for better prompt, base f_keep = 0.250, sim = 0.844
+450.57.761.515 I srv        update:  - cache state: 5 prompts, 62.811 MiB (limits: 8192.000 MiB, 4096 tokens, 299451 est)
+450.57.761.519 I srv        update:    - prompt 0x564505ed8670:     373 tokens, checkpoints:  0,    10.204 MiB
+450.57.761.521 I srv        update:    - prompt 0x56450875f7d0:     524 tokens, checkpoints:  0,    14.335 MiB
+450.57.761.523 I srv        update:    - prompt 0x56450875b3b0:     786 tokens, checkpoints:  0,    21.502 MiB
+450.57.761.525 I srv        update:    - prompt 0x564507ff9b60:     505 tokens, checkpoints:  0,    13.815 MiB
+450.57.761.526 I srv        update:    - prompt 0x564508753fb0:     108 tokens, checkpoints:  0,     2.955 MiB
+450.57.761.527 I srv  get_availabl: prompt cache update took 1.50 ms
+450.57.761.617 I slot launch_slot_: id  0 | task 1541 | processing task, is_child = 0
+450.58.781.542 I slot print_timing: id  0 | task 1541 | prompt eval time =     181.55 ms /     5 tokens (   36.31 ms per token,    27.54 tokens per second)
+450.58.781.546 I slot print_timing: id  0 | task 1541 |        eval time =     838.34 ms /    12 tokens (   69.86 ms per token,    14.31 tokens per second)
+450.58.781.547 I slot print_timing: id  0 | task 1541 |       total time =    1019.89 ms /    17 tokens
+450.58.781.548 I slot print_timing: id  0 | task 1541 |    graphs reused =       1527
+450.58.781.576 I slot      release: id  0 | task 1541 | stop processing: n_tokens = 43, truncated = 0
+450.58.781.587 I srv  update_slots: all slots are idle
+538.20.948.929 I srv    operator(): operator(): cleaning up before exit...
