@@ -132,3 +132,26 @@ How are you?<|im_end|>
 262.52.030.498 I slot print_timing: id  0 | task 1166 |    graphs reused =       1219
 262.52.030.515 I slot      release: id  0 | task 1166 | stop processing: n_tokens = 108, truncated = 0
 262.52.030.527 I srv  update_slots: all slots are idle
+288.46.444.188 I slot get_availabl: id  1 | task -1 | selected slot by LRU, t_last = 2641523460
+288.46.444.196 I srv  get_availabl: updating prompt cache
+288.46.444.315 W srv   prompt_save:  - saving prompt with length 505, total state size = 13.815 MiB (draft: 0.000 MiB)
+288.46.455.229 I srv          load:  - looking for better prompt, base f_keep = 0.006, sim = 0.032
+288.46.455.246 I srv        update:  - cache state: 4 prompts, 59.856 MiB (limits: 8192.000 MiB, 4096 tokens, 299454 est)
+288.46.455.249 I srv        update:    - prompt 0x564505ed8670:     373 tokens, checkpoints:  0,    10.204 MiB
+288.46.455.252 I srv        update:    - prompt 0x56450875f7d0:     524 tokens, checkpoints:  0,    14.335 MiB
+288.46.455.254 I srv        update:    - prompt 0x56450875b3b0:     786 tokens, checkpoints:  0,    21.502 MiB
+288.46.455.255 I srv        update:    - prompt 0x564507ff9b60:     505 tokens, checkpoints:  0,    13.815 MiB
+288.46.455.258 I srv  get_availabl: prompt cache update took 11.06 ms
+288.46.455.308 I slot launch_slot_: id  1 | task 1239 | processing task, is_child = 0
+288.56.734.906 I slot print_timing: id  1 | task 1239 | n_decoded =    100, tg =  11.73 t/s
+288.59.778.242 I slot print_timing: id  1 | task 1239 | n_decoded =    134, tg =  11.58 t/s
+289.02.833.062 I slot print_timing: id  1 | task 1239 | n_decoded =    168, tg =  11.49 t/s
+289.05.910.494 I slot print_timing: id  1 | task 1239 | n_decoded =    202, tg =  11.41 t/s
+289.08.930.683 I slot print_timing: id  1 | task 1239 | n_decoded =    236, tg =  11.39 t/s
+289.11.952.488 I slot print_timing: id  1 | task 1239 | n_decoded =    270, tg =  11.37 t/s
+289.14.726.064 I slot print_timing: id  1 | task 1239 | prompt eval time =    1752.52 ms /    92 tokens (   19.05 ms per token,    52.50 tokens per second)
+289.14.726.071 I slot print_timing: id  1 | task 1239 |        eval time =   26518.19 ms /   301 tokens (   88.10 ms per token,    11.35 tokens per second)
+289.14.726.072 I slot print_timing: id  1 | task 1239 |       total time =   28270.71 ms /   393 tokens
+289.14.726.073 I slot print_timing: id  1 | task 1239 |    graphs reused =       1517
+289.14.726.096 I slot      release: id  1 | task 1239 | stop processing: n_tokens = 395, truncated = 0
+289.14.726.118 I srv  update_slots: all slots are idle
